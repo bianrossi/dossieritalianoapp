@@ -1,14 +1,14 @@
-import Logo from '../assets/logohuella.png';
+import Carrito from '../assets/logohuella.png';
 
 
-function Widget () {
+function CartWidget () {
     return(
         <>
-            <img src={Logo} />
+            <img src={Carrito} />
         </>
 
     )
 
 }
 
-export default Widget;
+export default CartWidget;

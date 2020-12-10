@@ -1,11 +1,11 @@
-import Widget from '../components/CartWidget';
+import CartWidget from '../components/CartWidget';
 
 
-function Barra () {
+function NavBar () {
     return(
         <header> 
 
-            <Widget />
+            <CartWidget />
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 
@@ -49,4 +49,4 @@ function Barra () {
 
 }
 
-export default Barra; 
+export default NavBar; 

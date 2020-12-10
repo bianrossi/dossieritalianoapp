@@ -1,7 +1,7 @@
 
 
-function List () {
-    
+function ListContainer () {
+
     const bienvenida = () => {
         alert('Bienvenidos a nuestro carrito de servicios')
     }
@@ -16,4 +16,4 @@ function List () {
 
 }
 
-export default List;
+export default ListContainer;
