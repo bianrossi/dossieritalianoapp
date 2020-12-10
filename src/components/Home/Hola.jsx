@@ -1,7 +1,7 @@
 function Hola () {
     return(
         <> 
-            <h1>Bienvenidos a Dossier Italiano</h1>
+            <h1>Dossier Italiano</h1>
             
         </>
     )
