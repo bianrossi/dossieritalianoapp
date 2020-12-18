@@ -1,52 +1,36 @@
-import CartWidget from '../components/CartWidget';
+import './menu.css';
+import CartWidget from "./CartWidget";
 
 
-function NavBar () {
-    return(
-        <header> 
-
-            <CartWidget />
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+function NavBar({titulo, action}) {
+  return (
+    <>
+        <div>
+            <h1 className = "titulo">{titulo}Dossier Italiano</h1>
+            <div  className = "container-fluid">
                 
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Servicios</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Asesoramientos</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pedidos a Italia</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Traducciones
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Nacimiento</a></li>
-                                    <li><a class="dropdown-item" href="#">Defunción</a></li>
-                                    <li><a class="dropdown-item" href="#">Matrimonio</a></li>
-                                    <li><a class="dropdown-item" href="#">Sentencia de Divorcio</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                <div className = "row">
+                        
+                    <div className = "col-sm-10">
+                        <nav class="menuppal">
+                            <ul>
+                                <li><a href = "#">Asesoramientos</a></li>
+                                <li><a href = "#">Traducciones</a></li>
+                                <li><a href = "#">Pedidos de Partidas</a></li>
+                                <li><a href = "#">Turnos</a></li>
+                            </ul>
+                        </nav>
                     </div>
 
-                </div>
+                    <div className = "col-sm-2">
+                        <CartWidget action={action} />
+                    </div> 
 
-            </nav>
+                </div>  
 
-        </header>
-    )
-
+            </div>
+        </div> 
+    </>
+  );
 }
-
-export default NavBar; 
+export default NavBar;
